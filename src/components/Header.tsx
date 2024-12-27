@@ -7,7 +7,7 @@ import { CartActions } from "../reducers/cart-reducer"
 type HeaderProps = {
     cart: CartItem[]
     dispatch: Dispatch<CartActions>
-    
+
 
 
 }
@@ -99,7 +99,7 @@ export default function Header({ cart, dispatch }: HeaderProps) {
                                             </table>
 
                                             <p className="text-end">Total pagar: <span className="fw-bold">${cartTotal}</span></p>
-                                            <button className="btn btn-dark w-100 mt-3 p-2" onClick={() => dispatch({ type: 'clear-cart'})}>Vaciar Carrito</button>
+                                            <button className="btn btn-dark w-100 mt-3 p-2" onClick={() => dispatch({ type: 'clear-cart' })}>Vaciar Carrito</button>
                                         </>
                                     )}
 
